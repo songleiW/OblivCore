@@ -1,6 +1,6 @@
-OblivCore: Oblivious Core Queries over Bipartite Graph Streams via Oblivious Message Passing
+# OblivCore: Oblivious Core Queries over Bipartite Graph Streams via Oblivious Message Passing
 
-This repository contains the reference implementation of OblivCore, the first system for performing oblivious (α, β)-core queries over bipartite graph streams. The project is based on the techniques introduced in our VLDB 2025 paper:
+This repository contains the reference implementation of OblivCore, the first system for performing oblivious (α, β)-core queries over bipartite graph streams. 
 
 ⸻
 
@@ -8,12 +8,12 @@ Overview
 
 Bipartite graphs are widely used to model relationships such as social interactions, e-commerce transactions, and financial activities. A core analytical task is the (α, β)-core query, which extracts a maximal subgraph where every upper-layer vertex has degree ≥ α and every lower-layer vertex has degree ≥ β.
 
-OblivCore enables such queries securely over distributed bipartite graph streams while preserving privacy. Our system builds upon a multi-server architecture and introduces new techniques for:
+# OblivCore enables such queries securely over distributed bipartite graph streams while preserving privacy. Our system builds upon a multi-server architecture and introduces new techniques for:
    •  Oblivious vertex degree computation via message passing.
    •  Reversed oblivious message passing to support secure out-degree computation.
    •  Oblivious low-degree vertex filtering using soft-filtering.
 
-Experimental results show that OblivCore outperforms generic MPC frameworks by up to 141× in query latency and 235× in communication cost.
+# Experimental results show that OblivCore outperforms generic MPC frameworks by up to 141× in query latency and 235× in communication cost.
 
 ⸻
 
@@ -26,9 +26,9 @@ Features
 
 ⸻
 
-Installation
+# Installation
 
-Requirements
+# Requirements
    •  Python 3.9+
    •  MP-SPDZ or compatible MPC backend (if benchmarking)
    •  Required Python libraries:
