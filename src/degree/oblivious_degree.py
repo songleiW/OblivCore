@@ -1,0 +1,1 @@
+def deg(graph): return {}
