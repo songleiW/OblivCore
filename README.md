@@ -2,8 +2,6 @@
 
 This repository contains the reference implementation of OblivCore, the first system for performing oblivious (α, β)-core queries over bipartite graph streams. 
 
-⸻
-
 Overview
 
 Bipartite graphs are widely used to model relationships such as social interactions, e-commerce transactions, and financial activities. A core analytical task is the (α, β)-core query, which extracts a maximal subgraph where every upper-layer vertex has degree ≥ α and every lower-layer vertex has degree ≥ β.
@@ -15,17 +13,13 @@ Bipartite graphs are widely used to model relationships such as social interacti
 
 # Experimental results show that OblivCore outperforms generic MPC frameworks by up to 141× in query latency and 235× in communication cost.
 
-⸻
-
 Features
    •  Privacy-preserving (α, β)-core queries on bipartite graph streams.
    •  Efficient degree computation and filtering with oblivious message passing.
    •  Support for real-time stream updates with secret-sharing protection.
    •  Multi-server setting for distributed trust (tested with 3 servers).
    •  Evaluation on multiple real-world datasets (social, e-commerce, and network logs).
-
-⸻
-
+   
 # Installation
 
 # Requirements
@@ -43,9 +37,6 @@ If OblivCore includes C++/MPC components, build them first:
 
 make
 
-
-⸻
-
 Usage
 
 Running OblivCore
@@ -61,8 +52,6 @@ python run_oblivcore.py --input data/sample_edges.txt --alpha 5000 --beta 10 --w
 
 This will execute a (5000,10)-core query on the given stream snapshot.
 
-⸻
-
 Repository Structure
 
 OblivCore/
@@ -75,8 +64,6 @@ OblivCore/
 ├── scripts/            # Running experiments and benchmarks
 ├── results/            # Experimental outputs
 └── README.md           # Project documentation
-
-⸻
 
 License
 
